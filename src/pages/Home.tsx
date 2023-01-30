@@ -1,8 +1,8 @@
-import { Google } from "@components/Browser/Google";
 import { MenuBar } from "@components/MainScreen/MenuBar/MenuBar";
 import WindowModal from "@components/Modal/Modal";
 
 import { Icon } from "@components/shared/Icon/Icon";
+import { Toggle } from "@components/Toggle/Toggle";
 
 interface Props {
   onLogut: () => void;

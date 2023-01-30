@@ -10,9 +10,9 @@ export const News = () => {
         return (
           <div
             key={id}
-            className="flex flex-col items-start gap-1 rounded-lg border-2 border-solid border-white p-1"
+            className="flex h-48 flex-col items-start gap-1 rounded-lg border-2 border-solid border-white p-1"
           >
-            <p>{name}</p>
+            <p className="text-xs font-semibold lg:ml-2 lg:text-base">{name}</p>
             <p>{email}</p>
             <p>{body}</p>
           </div>

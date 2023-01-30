@@ -7,13 +7,16 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import App from "./App";
 
 import "./styles/index.css";
+import { UIContextProvider } from "contexts/UIContext/UIContextProvider";
 
 const queryClient = new QueryClient();
 
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <UIContextProvider>
+        <App />
+      </UIContextProvider>
       <ReactQueryDevtools />
     </QueryClientProvider>
   </React.StrictMode>,
